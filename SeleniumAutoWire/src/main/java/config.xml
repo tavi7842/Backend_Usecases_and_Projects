@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
+        <!-- bean definitions here -->
+        
+        <context:annotation-config/>
+        
+        <bean name="heart2" class="com.bitlabs.SeleniumAutoWire.Heart">
+        <property name="name" value="Human"/>
+        <property name="hearts" value="1"/>
+        </bean>
+        
+        <bean name="heart1" class="com.bitlabs.SeleniumAutoWire.Heart">
+         <property name="name" value="Octopus"/>
+        <property name="hearts" value="3"/>
+        </bean>
+        
+        <bean name="human" class="com.bitlabs.SeleniumAutoWire.Human"/>
+
+</beans>
