@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+            
+            
+         <context:annotation-config/>
+         <context:property-placeholder location="classpath:information.properties"/>
+
+    <bean name="stu" class="com.bitlabs.Setter_Injection.Student">
+      <!--   <property name="id" value="${student.id}"/>
+        <property name="name" value="${student.name}"/>
+        <property name="college" value="${student.college}"/>
+       <property name="list">
+        <list>
+        <value>Vinay</value>
+        <value>Vicky</value>
+        <value>Vikram</value>
+        <value>Vijay</value>
+        <value>Vijay</value>
+        </list>
+        </property>
+        <property name="set">
+        <set>
+        <value>Ajay</value>
+        <value>Akhil</value>
+        <value>Asin</value>
+        <value>Akram</value>
+        <value>Akram</value>
+        </set>
+        </property>
+        <property name="map">
+        <map>
+        <entry key="1" value="Videya"/>
+        <entry key="2" value="Vinaya"/>
+        <entry key="3" value="Rama"/>
+        </map>
+        </property>-->
+    </bean>
+    
+    <bean name="add" class="com.bitlabs.Setter_Injection.Address">
+    <property name="city" value="Guntur"/>
+    <property name="area" value="kothapeta"/>
+   
+
+    </bean>
+
+    
+
+</beans>
